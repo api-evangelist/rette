@@ -1,7 +1,26 @@
 aid: rette
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/rette.png
 name: Rette
-description: Rette is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Rette AI is a revenue cycle management (RCM) platform for small specialty
+  medical practices, with an initial focus on orthopedic and other specialty clinics.
+  It uses AI to convert clinical notes into structured, specialty-specific ICD-10 and
+  CPT claim data, run payer-specific claims validation and eligibility checks, and manage
+  denial appeals by analyzing root causes and generating payer-specific appeal letters.
+  Rette integrates read-only with existing EHRs such as Athena, Epic, and eClinicalWorks
+  without requiring data migration or workflow changes, and is HIPAA-compliant with
+  Business Associate Agreements. Backed by 500 Global and a participant in StartX and
+  Mayo Clinic Platform Accelerate. No public developer API is published at this time.
 url: https://raw.githubusercontent.com/api-evangelist/rette/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Healthcare
+- Revenue Cycle Management
+- Medical Billing
+- Health Tech
+- Artificial Intelligence
+- Claims
+- Orthopedics
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +49,14 @@ maintainers:
 common:
 - type: Website
   url: https://rette.ai
+- type: Blog
+  url: https://rette.ai/news
+- type: PrivacyPolicy
+  url: https://drive.google.com/file/d/1tbvvIXZQyvuSfV-gGJhMR-c7v3RQJwn8/view?usp=sharing
+- type: DomainSecurity
+  url: security/rette-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
